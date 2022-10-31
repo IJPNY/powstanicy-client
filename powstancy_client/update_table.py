@@ -35,7 +35,7 @@ def update_organizations_row(
 def update_organizations(src: str, creds_fh: str = None) -> None:
     """
     Reads csv file with updated values for the `instytucje` column of
-    the `ijp_dokumentyh_instytucje` table and commits them to the database.
+    the `ijp_dokumenty_instytucje` table and commits them to the database.
 
     Args:
         src:                source csv file path
