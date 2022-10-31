@@ -17,6 +17,7 @@ def test_get_creds_provided(mock_creds_file):
     assert isinstance(creds, dict)
 
 
+@pytest.mark.local
 def test_get_creds_local():
     creds = get_creds()
     assert isinstance(creds, dict)

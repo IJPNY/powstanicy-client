@@ -6,6 +6,7 @@ from powstancy_client.update_table import update_organizations_row, update_organ
 from powstancy_client.datastore import get_creds, get_engine
 
 
+@pytest.mark.local
 def test_update_organizations_row():
     creds = get_creds()
     engine = get_engine(creds)
@@ -19,6 +20,8 @@ def test_update_organizations_row():
         assert result == 1
 
 
+@pytest.mark.local
+@pytest.mark.slow
 def test_update_organizations():
     with does_not_raise():
         update_organizations("temp/instytucje-new.csv")

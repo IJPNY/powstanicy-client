@@ -42,7 +42,8 @@ exclude = '''
 
 [tool.pytest.ini_options]
 markers = [
-  "local: run only on a local machine" 
+  "local: run only on a local machine",
+  "slow: slow operations on large sets" 
 ]
 addopts = "-vv --color=yes"
 
